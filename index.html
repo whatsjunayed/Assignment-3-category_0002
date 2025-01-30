@@ -88,9 +88,11 @@
       ></div>
       <!-- Navbar -->
       <nav class="fixed top-0 left-0 w-full bg-white z-10">
-        <div class="navbar max-w-[1320px] w-full mx-auto">
+        <div
+          class="navbar max-w-[1320px] w-full mx-auto border-b border-[#009826] lg:border-none"
+        >
           <div class="navbar-start">
-            <a href="#home" class="w-[30%]"
+            <a href="#home" class="w-[40%] sm:w-[30%] ml-2 xl:ml-0"
               ><img
                 src="c2-assets/logo-header.png"
                 alt="Navbar logo"
@@ -106,8 +108,16 @@
             </ul>
           </div>
           <div class="navbar-end gap-3">
-            <img src="c2-assets/search.svg" alt="" class="mr-3 cursor-pointer">
-            <img src="c2-assets/cart.svg" alt="" class="mr-3 cursor-pointer">
+            <img
+              src="c2-assets/search.svg"
+              alt=""
+              class="mr-3 cursor-pointer hidden xl:inline-flex"
+            />
+            <img
+              src="c2-assets/cart.svg"
+              alt=""
+              class="mr-3 cursor-pointer hidden xl:inline-flex"
+            />
             <a
               class="btn btn-outline hidden lg:inline-flex border-primaryColor hover:bg-primaryColor hover:border-transparent"
               >Login</a
@@ -120,10 +130,10 @@
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
+                  class="h-7 w-7"
                   fill="none"
                   viewBox="0 0 24 24"
-                  stroke="currentColor"
+                  stroke="#009826"
                 >
                   <path
                     stroke-linecap="round"
@@ -139,6 +149,7 @@
               >
                 <li><a href="#services">Services</a></li>
                 <li><a href="#products">Products</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="contact">Contact us</a></li>
               </ul>
             </div>
@@ -148,10 +159,10 @@
 
       <!-- Hero -->
 
-      <div class="hero pt-32 overflow-hidden" id="home">
+      <div class="hero pt-24 lg:pt-32 overflow-hidden" id="home">
         <div class="hero-content text-center flex-col p-0">
           <div class="w-3/4">
-            <h1 class="text-5xl font-semibold">
+            <h1 class="text-4xl sm:text-5xl font-semibold">
               Freshness
               <span class="text-primaryColor">
                 You Can <br />
@@ -167,27 +178,32 @@
           <img
             src="c2-assets/hero-vegetables.png"
             alt=""
-            class="w-1/2 animate-[hello_1.5s_linear_infinite_alternate]"
+            class="sm:w-1/2 animate-[hello_1.5s_linear_infinite_alternate]"
           />
         </div>
       </div>
     </header>
     <main>
       <!-- services -->
-      <section class="max-w-[1320px] mx-auto py-36" id="services">
-        <p class="text-primaryColor font-semibold text-4xl">Services</p>
+      <section
+        class="max-w-[1320px] w-[95%] 2xl:w-full mx-auto py-24 lg:py-36"
+        id="services"
+      >
+        <p class="text-primaryColor font-semibold text-3xl sm:text-4xl">
+          Services
+        </p>
         <!-- Services Card -->
-        <div class="grid grid-cols-3 gap-6 mt-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           <div
-            class="bg-primaryBg p-8 rounded-2xl flex flex-col items-center text-center gap-3"
+            class="bg-primaryBg p-4 xl:p-8 rounded-2xl flex flex-col items-center text-center gap-3"
           >
             <img
               src="c2-assets/service.png"
               alt=""
               class="pt-3 w-1/3 bg-white p-4 rounded-full"
             />
-            <h2 class="font-semibold text-2xl">24/7 Services</h2>
-            <p class="text-textColor1">
+            <h2 class="font-semibold text-xl lg:text-2xl">24/7 Services</h2>
+            <p class="text-textColor1 text-sm xl:text-base">
               Always available, providing reliable support anytime, ensuring
               your needs are met consistently.
             </p>
@@ -200,8 +216,8 @@
               alt=""
               class="pt-3 w-1/3 bg-white p-4 rounded-full"
             />
-            <h2 class="font-semibold text-2xl">Fast Delivery</h2>
-            <p class="text-textColor1">
+            <h2 class="font-semibold text-xl lg:text-2xl">Fast Delivery</h2>
+            <p class="text-textColor1 text-sm xl:text-base">
               Quick and efficient service, ensuring your products reach you on
               time, always.
             </p>
@@ -214,8 +230,8 @@
               alt=""
               class="pt-3 w-1/3 bg-white p-4 rounded-full"
             />
-            <h2 class="font-semibold text-2xl">Healthy Products</h2>
-            <p class="text-textColor1">
+            <h2 class="font-semibold text-xl lg:text-2xl">Healthy Products</h2>
+            <p class="text-textColor1 text-sm xl:text-base">
               Nutrient-rich, natural ingredients ensuring your well-being with
               every purchase, safely delivered
             </p>
@@ -224,22 +240,26 @@
       </section>
 
       <!-- Products -->
-      <section class="py-36 bg-primaryBg" id="products">
-        <div class="max-w-[1320px] mx-auto">
-          <p class="text-primaryColor font-semibold text-4xl">
+      <section class="py-24 lg:py-36 bg-primaryBg" id="products">
+        <div class="max-w-[1320px] mx-auto w-[95%] 2xl:w-full">
+          <p class="text-primaryColor font-semibold text-3xl sm:text-4xl">
             Popular Products
           </p>
-          <div class="grid grid-cols-3 mt-12 gap-6">
+          <div class="grid grid-cols-1 xl:grid-cols-3 mt-12 gap-6">
             <div
-              class="relative bg-gradient-to-br to-white from-[#53DB3A] h-[402px] px-6 pt-14 flex flex-col gap-5 rounded-xl"
+              class="relative bg-gradient-to-br to-white from-[#53DB3A] h-[402px] xl:h-full px-6 pt-14 flex flex-col gap-5 rounded-xl"
             >
-              <h1 class="font-semibold text-2xl text-white">30% Off</h1>
-              <p class="text-sm w-2/3">
+              <h1
+                class="font-semibold text-xl md:text-4xl xl:text-xl text-white"
+              >
+                30% Off
+              </h1>
+              <p class="text-sm md:text-lg xl:text-sm w-2/3">
                 Get high-quality, organic produce at unbeatable prices for a
                 healthy lifestyle.
               </p>
               <div>
-                <button class="btn text-lg">Buy Now</button>
+                <button class="btn md:text-lg">Buy Now</button>
                 <img
                   src="c2-assets/vegetable-offer.png"
                   alt=""
@@ -247,13 +267,13 @@
                 />
               </div>
             </div>
-            <div class="col-span-2">
-              <div class="grid grid-cols-3 gap-6">
+            <div class="col-span-1 xl:col-span-2">
+              <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-6">
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -263,17 +283,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Onion 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -283,17 +303,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Tomato 500 G</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -303,17 +323,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Potato 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -323,17 +343,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Tomato 500 G</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -343,17 +363,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Potato 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -363,17 +383,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Onion 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -383,17 +403,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Potato 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -403,17 +423,17 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Onion 1 KG</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
                 <div class="flex gap-4 bg-white rounded-xl p-4">
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
-                    class="p-2 rounded-lg bg-primaryBg"
+                    class="w-[55px] h-[55px] xl:w-auto xl:h-auto xl:p-2 rounded-lg bg-primaryBg my-auto"
                   />
                   <div>
                     <div class="rating rating-sm">
@@ -423,10 +443,10 @@
                         class="mask mask-star-2 bg-orange-400"
                         checked="checked"
                       />
-                      <p class="pl-2">4.5</p>
+                      <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-lg py-1">Onion 1 KG</p>
-                    <p>$39.99</p>
+                    <p class="font-semibold xl:text-lg md:py-1">Tomato 500 G</p>
+                    <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
               </div>
@@ -434,24 +454,32 @@
           </div>
         </div>
       </section>
-
       <!-- Offer -->
-      <section class="max-w-[1320px] mx-auto py-36" id="services">
-        <p class="text-primaryColor font-semibold text-4xl">Arrival & Offers</p>
-        <div class="grid grid-cols-5 gap-5 pt-12">
+      <section
+        class="max-w-[1320px] mx-auto w-[95%] 2xl:w-full py-24 lg:py-36"
+        id="services"
+      >
+        <p class="text-primaryColor font-semibold text-3xl sm:text-4xl">
+          Arrival & Offers
+        </p>
+        <div class="grid md:grid-cols-5 gap-5 pt-12 poppins-font">
           <div
-            class="col-span-3 bg-[#00541D] rounded-2xl pt-7 px-10 flex justify-between"
+            class="md:col-span-3 bg-[#00541D] rounded-2xl pt-7 pl-5 lg:px-10 flex justify-between"
           >
             <div class="flex flex-col gap-7 pt-5">
-              <img src="c2-assets/dawat-logo.png" alt="" class="w-[245px]" />
+              <img
+                src="c2-assets/dawat-logo.png"
+                alt=""
+                class="w-[114px] xl:w-[245px]"
+              />
               <div>
                 <button
-                  class="btn bg-[#57B773] border-transparent text-2xl font-normal text-white"
+                  class="btn bg-[#57B773] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap"
                 >
                   Cook Exotic Dishes
                 </button>
               </div>
-              <p class="text-4xl poppins-font text-white">
+              <p class="text-xl xl:text-4xl text-white">
                 UP to <span class="font-bold">20% OFF</span>
               </p>
             </div>
@@ -459,27 +487,27 @@
               <img
                 src="c2-assets/dawat-mock-up.png"
                 alt=""
-                class="object-contain"
+                class="object-contain mr-auto"
               />
             </div>
           </div>
           <div
-            class="col-span-2 bg-[#13285F] rounded-2xl pt-7 px-5 flex justify-between"
+            class="md:col-span-2 bg-[#13285F] rounded-2xl pt-7 px-5 flex justify-between"
           >
-            <div class="flex flex-col gap-7 pt-5">
+            <div class="flex flex-col gap-7">
               <img
                 src="c2-assets/india-gate-logo.png"
                 alt=""
-                class="w-[98px]"
+                class="w-[64px] xl:w-[98px]"
               />
               <div>
                 <button
-                  class="btn bg-[#2C4D94] border-transparent text-2xl font-normal text-white"
+                  class="btn bg-[#2C4D94] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap"
                 >
                   World’s No.1 Rice
                 </button>
               </div>
-              <p class="text-4xl poppins-font text-white">
+              <p class="text-xl xl:text-4xl text-white">
                 UP to <span class="font-bold">40% OFF</span>
               </p>
             </div>
@@ -495,19 +523,26 @@
       </section>
 
       <!-- FAQ -->
-      <section class="max-w-[1320px] mx-auto py-36" id="faq">
-        <p class="text-primaryColor font-semibold text-4xl">
+      <section
+        class="max-w-[1320px] mx-auto w-[95%] 2xl:w-full py-24 lg:py-36"
+        id="faq"
+      >
+        <p class="text-primaryColor font-semibold text-3xl sm:text-4xl">
           Frequently Asked Questions
         </p>
-        <div class="grid grid-cols-2 mt-12 poppins-font">
-          <div class="flex flex-col justify-between">
+        <div
+          class="grid grid-cols-1 gap-y-10 md:grid-cols-2 mt-12 poppins-font"
+        >
+          <div
+            class="flex flex-col gap-5 justify-between order-1 md:order-none"
+          >
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" checked="checked" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-lg xl:text-xl font-medium">
                 What is the quality of your vegetables?
               </div>
               <div class="collapse-content">
-                <p>
+                <p class="text-sm xl:text-base">
                   We offer high-quality vegetables sourced from genuine farms.
                   Your satisfaction is our priority, and if there are any
                   issues, feel free to contact our customer support.
@@ -516,12 +551,12 @@
             </div>
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-lg xl:text-xl font-medium">
                 Where do your vegetables come from?
               </div>
 
               <div class="collapse-content">
-                <p>
+                <p class="text-sm xl:text-base">
                   Our vegetables are locally sourced from trusted farms. We
                   ensure fresh and high-quality produce to meet your daily
                   nutrition needs.
@@ -530,11 +565,11 @@
             </div>
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-lg xl:text-xl font-medium">
                 Do you offer delivery?
               </div>
               <div class="collapse-content">
-                <p>
+                <p class="text-sm xl:text-base">
                   Yes, we offer delivery within the city. Once you place your
                   order, you’ll receive your vegetables within 1-2 days at your
                   address.
@@ -543,11 +578,11 @@
             </div>
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-lg xl:text-xl font-medium">
                 How much is the delivery fee?
               </div>
               <div class="collapse-content">
-                <p>
+                <p class="text-sm xl:text-base">
                   The delivery fee may vary based on your location. You can view
                   the specific fee at the checkout page by entering your
                   delivery address.
@@ -556,18 +591,18 @@
             </div>
             <div class="collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" />
-              <div class="collapse-title text-xl font-medium">
+              <div class="collapse-title text-lg xl:text-xl font-medium">
                 Are your vegetables fresh?
               </div>
               <div class="collapse-content">
-                <p>
+                <p class="text-sm xl:text-base">
                   Yes, our vegetables are fresh and locally sourced. We deliver
                   daily to ensure you get the freshest produce.
                 </p>
               </div>
             </div>
           </div>
-          <div class="w-3/4 flex items-end justify-end mx-auto">
+          <div class="w-3/4 flex items-end justify-end mx-auto my-auto">
             <img
               src="c2-assets/faqImg.png"
               alt=""
@@ -579,37 +614,41 @@
     </main>
 
     <footer
-      class="max-w-[1620px] w-full mx-auto bg-primaryColor pb-36"
+      class="max-w-[1620px] w-full mx-auto bg-primaryColor pb-20 lg:pb-32"
       id="contact"
     >
-      <div class="max-w-[1320px] w-full mx-auto">
+      <div class="max-w-[1320px] w-[95%] 2xl:w-full mx-auto">
         <div
-          class="grid grid-cols-2 bg-primaryBg gap-14 py-12 rounded-3xl translate-y-[-50%] mt-36"
+          class="grid grid-cols-1 md:grid-cols-2 bg-primaryBg gap-5 md:gap-14 py-12 rounded-3xl translate-y-[-40%] lg:translate-y-[-50%] mt-44 md:mt-36"
         >
           <img
             src="c2-assets/vegetable-busket.png"
             alt=""
-            class="w-1/2 mx-auto"
+            class="w-1/3 sm:w-1/4 md:w-1/2 mx-auto"
           />
-          <div class="flex flex-col gap-5">
-            <p class="text-primaryColor font-semibold text-4xl">
+          <div class="flex flex-col items-center md:items-start gap-5 px-3">
+            <p
+              class="text-primaryColor font-semibold text-2xl sm:text-3xl lg:text-4xl"
+            >
               Get Grocery News!
             </p>
-            <p>Exclusive training tips, ticks, product deals and more.</p>
+            <p class="w-3/4 text-center md:text-start md:w-full">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
             <input
               type="text"
               placeholder="Enter Email"
-              class="bg-white w-3/5 p-4 rounded-lg outline-none"
+              class="bg-white w-4/5 sm:w-3/5 p-4 rounded-lg outline-none"
             />
             <div>
               <a
-                class="btn hidden tracking-widest font-normal lg:inline-flex bg-primaryColor text-white hover:text-primaryColor hover:bg-transparent"
+                class="btn tracking-widest font-normal bg-primaryColor text-white hover:text-primaryColor hover:bg-transparent"
                 >Subscribe</a
               >
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-3 text-white">
+        <div class="grid grid-cols-1 lg:grid-cols-3 text-white gap-y-10 -mt-20">
           <div>
             <a href="#home" class="w-[30%]">
               <img
@@ -623,11 +662,11 @@
             </p>
           </div>
           <div>
-            <ul class="menu menu-horizontal px-1 flex-col font-extralight">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#products">Product</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a>Contact us</a></li>
+            <ul class="menu menu-horizontal flex-col font-extralight px-0">
+              <li ><a href="#services" class="px-0">Services</a></li>
+              <li><a href="#products" class="px-0">Product</a></li>
+              <li><a href="#faq" class="px-0">FAQ</a></li>
+              <li><a href="#contact" class="px-0">Contact us</a></li>
             </ul>
           </div>
           <div class="flex flex-col mt-auto">
