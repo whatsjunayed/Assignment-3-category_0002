@@ -61,7 +61,7 @@
         font-style: normal;
       }
 
-      @keyframes hello {
+      @keyframes animation1 {
         0% {
           transform: scale(1.1);
         }
@@ -69,7 +69,7 @@
           transform: scale(1);
         }
       }
-      @keyframes hey {
+      @keyframes animation2 {
         0% {
           transform: translateY(5%);
         }
@@ -151,6 +151,18 @@
                 <li><a href="#products">Products</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="contact">Contact us</a></li>
+                <li class="py-0">
+                  <a
+                    class="btn btn-outline border-primaryColor hover:bg-primaryColor hover:border-transparent py-0 mt-5"
+                    >Login</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="btn bg-primaryColor text-white hover:text-primaryColor hover:bg-transparent py-0 mt-2"
+                    >Register</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -161,16 +173,15 @@
 
       <div class="hero pt-24 lg:pt-32 overflow-hidden" id="home">
         <div class="hero-content text-center flex-col p-0">
-          <div class="w-3/4">
-            <h1 class="text-4xl sm:text-5xl font-semibold">
+          <div class="">
+            <h1 class="text-4xl sm:text-5xl font-semibold w-4/5 mx-auto">
               Freshness
               <span class="text-primaryColor">
-                You Can <br />
-                Count
+                You Can <span class="block"></span> Count
               </span>
               On, Prices You’ll Love!
             </h1>
-            <p class="py-6">
+            <p class="py-6 w-4/5 md:w-3/4 mx-auto">
               Shop your daily essentials at unbeatable prices. From fresh
               produce to pantry staples, we’ve got you covered every day!
             </p>
@@ -178,7 +189,7 @@
           <img
             src="c2-assets/hero-vegetables.png"
             alt=""
-            class="sm:w-1/2 animate-[hello_1.5s_linear_infinite_alternate]"
+            class="sm:w-1/2 animate-[animation1_1.5s_linear_infinite_alternate]"
           />
         </div>
       </div>
@@ -195,7 +206,7 @@
         <!-- Services Card -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
           <div
-            class="bg-primaryBg p-4 xl:p-8 rounded-2xl flex flex-col items-center text-center gap-3"
+            class="bg-primaryBg p-4 xl:p-8 rounded-2xl flex flex-col items-center text-center gap-3 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-default"
           >
             <img
               src="c2-assets/service.png"
@@ -209,7 +220,7 @@
             </p>
           </div>
           <div
-            class="bg-primaryBg p-8 rounded-2xl flex flex-col items-center text-center gap-3"
+            class="bg-primaryBg p-8 rounded-2xl flex flex-col items-center text-center gap-3 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-default"
           >
             <img
               src="c2-assets/delivery.png"
@@ -223,7 +234,7 @@
             </p>
           </div>
           <div
-            class="bg-primaryBg p-8 rounded-2xl flex flex-col items-center text-center gap-3"
+            class="bg-primaryBg p-8 rounded-2xl flex flex-col items-center text-center gap-3 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-default"
           >
             <img
               src="c2-assets/healthy.png"
@@ -259,17 +270,23 @@
                 healthy lifestyle.
               </p>
               <div>
-                <button class="btn md:text-lg">Buy Now</button>
+                <button
+                  class="btn md:text-lg hover:bg-primaryColor hover:text-white hover:border-transparent"
+                >
+                  Buy Now
+                </button>
                 <img
                   src="c2-assets/vegetable-offer.png"
                   alt=""
-                  class="absolute right-0 bottom-0"
+                  class="absolute right-0 bottom-0 w-[50%] sm:w-auto"
                 />
               </div>
             </div>
             <div class="col-span-1 xl:col-span-2">
               <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 xl:gap-6">
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
@@ -285,11 +302,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold text-sm xl:text-lg md:py-1">Onion 1 KG</p>
+                    <p class="font-semibold text-sm xl:text-lg md:py-1">
+                      Onion 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
@@ -305,11 +326,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg text-sm md:py-1">Tomato 500 G</p>
+                    <p class="font-semibold xl:text-lg text-sm md:py-1">
+                      Tomato 500 G
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
@@ -325,11 +350,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Potato 1 KG</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Potato 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
@@ -345,11 +374,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Tomato 500 G</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Tomato 500 G
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
@@ -365,11 +398,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Potato 1 KG</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Potato 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
@@ -385,11 +422,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Onion 1 KG</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Onion 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/potato.svg"
                     alt=""
@@ -405,11 +446,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Potato 1 KG</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Potato 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/onion.svg"
                     alt=""
@@ -425,11 +470,15 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Onion 1 KG</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Onion 1 KG
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
-                <div class="flex  bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4">
+                <div
+                  class="flex bg-white rounded-xl gap-2 p-2 sm:gap-4 sm:p-4 duration-300 border-2 border-transparent hover:border-2 hover:border-primaryColor cursor-pointer"
+                >
                   <img
                     src="c2-assets/tomato.svg"
                     alt=""
@@ -445,7 +494,9 @@
                       />
                       <p class="pl-2 text-xs md:text-base">4.5</p>
                     </div>
-                    <p class="font-semibold xl:text-lg md:py-1 text-sm">Tomato 500 G</p>
+                    <p class="font-semibold xl:text-lg md:py-1 text-sm">
+                      Tomato 500 G
+                    </p>
                     <p class="text-xs md:text-base">$39.99</p>
                   </div>
                 </div>
@@ -474,7 +525,7 @@
               />
               <div>
                 <button
-                  class="btn bg-[#57B773] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap"
+                  class="btn bg-[#57B773] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap hover:bg-transparent"
                 >
                   Cook Exotic Dishes
                 </button>
@@ -502,7 +553,7 @@
               />
               <div>
                 <button
-                  class="btn bg-[#2C4D94] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap"
+                  class="btn bg-[#2C4D94] border-transparent xl:text-2xl font-normal text-white whitespace-nowrap hover:bg-transparent"
                 >
                   World’s No.1 Rice
                 </button>
@@ -524,7 +575,7 @@
 
       <!-- FAQ -->
       <section
-        class="max-w-[1320px] mx-auto w-[95%] 2xl:w-full py-24 lg:py-36"
+        class="max-w-[1320px] mx-auto w-[95%] 2xl:w-full py-20 lg:py-36"
         id="faq"
       >
         <p class="text-primaryColor font-semibold text-3xl sm:text-4xl">
@@ -606,7 +657,7 @@
             <img
               src="c2-assets/faqImg.png"
               alt=""
-              class="w-full animate-[hey_1.5s_linear_infinite_alternate]"
+              class="w-full animate-[animation2_1.5s_linear_infinite_alternate]"
             />
           </div>
         </div>
@@ -663,7 +714,7 @@
           </div>
           <div>
             <ul class="flex flex-col gap-y-5 font-extralight px-0">
-              <li ><a href="#services" class="px-0">Services</a></li>
+              <li><a href="#services" class="px-0">Services</a></li>
               <li><a href="#products" class="px-0">Product</a></li>
               <li><a href="#faq" class="px-0">FAQ</a></li>
               <li><a href="#contact" class="px-0">Contact us</a></li>
